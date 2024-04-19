@@ -1,0 +1,76 @@
+:root{
+    --color-white:#fff;
+    --color-yellow: rgb(185, 166, 0);
+    --color-golden: rgb(73, 57, 0);
+    --color-dark-1: rgb(0, 0, 0);
+    --color-dark-2: rgb(19, 19, 19);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-dark-2);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#content{
+    background-color: var(--color-dark-1);
+    padding: 2em;
+    border-radius: 10px;
+    min-width: 30%;
+    overflow: auto;
+}
+h1{
+    margin-bottom: 1em;
+    text-align: center;
+    color: var(--color-white);
+}
+#content form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.input{
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--color-dark-2);
+    border: 2px solid var(--color-dark-1);
+    color: var(--color-white);
+    width: 100%;
+    box-sizing: border-box;
+}
+.input:focus{
+    border: 2px solid var(--color-golden);
+    transition: .3s;
+}
+.span{
+    font-size: 10px;
+    display: none;
+    color: #e63636;
+}
+#checkbox_label{
+    font-size: 12px;
+    margin-top: -30px;
+    margin-right: 30px;
+}
+#submit_button{
+    height: 60px;
+    width: 100%;
+    background-color: var(--color-yellow);
+    color: var(--color-dark-1);
+    text-align: center;
+    margin-top: 1rem;
+}
+#submit_button:hover{
+    padding: 10px 6px;
+    background-color: var(--color-golden);
+    color: var(--color-dark-2);
+    cursor: pointer;
+}

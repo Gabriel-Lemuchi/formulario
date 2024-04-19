@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Autenticar</title>
+</head>
+<body>
+    <div id="content">
+        <h1>FORMULÁRIO</h1>
+        <form id="form" onclick="validateForm()">
+            <input type="text" placeholder="Insira seu nome" class="input" oninput="nameValidate()">
+            <span class="span">Deve ter mais de 2 caractéries ou menos de 9 caractéries</span>
+            <input type="email" placeholder="Insira seu email" class="input" oninput="emailValidate()">
+            <span class="span">Email inválido</span>
+            <textarea placeholder="Insira seu endereço" class="input" cols="20" rows="15" oninput="addressValidate()"></textarea>
+            <span class="span">Deve ter mais de 20 dígitos</span>
+            <input type="password" placeholder="Insira sua senha" class="input" oninput="passwordValidate()">
+            <span class="span">Deve ter mais de 10 dígitos</span>
+            <input type="password" placeholder="Repita a senha" class="input" oninput="replyPasswordValidate()">
+            <span class="span">Senhas divergentes</span>
+            <input type="checkbox" value="checkbox" id="checkbox" oninput="validateCheckbox();">
+            <label for="checkbox" id="checkbox_label">Aceitar termos de responsabilidade</label>
+            <div id="submit" onclick="validateForm()">
+                <button id="submit_button">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
